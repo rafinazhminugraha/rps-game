@@ -42,3 +42,11 @@ button:active {
   margin-top: 15px;
   font-weight: bold;
 }
+
+.greenText {
+  color: green;
+}
+
+.redText {
+  color: red;
+}

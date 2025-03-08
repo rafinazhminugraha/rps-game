@@ -33,8 +33,12 @@ button:active {
   margin-bottom: 25px;
 }
 
-#playerDisplay, #computerDisplay, #resultDisplay {
+#playerDisplay, #computerDisplay {
+  display: grid;
+  grid-template-columns: minmax(100px, auto) 1fr;
+  gap: 10px;
   font-size: 1.8rem;
+  width: 100%;
 }
 
 #resultDisplay {
@@ -43,10 +47,30 @@ button:active {
   font-weight: bold;
 }
 
+#display {
+  display: flex;
+  width: 340px;
+  flex-direction: column;
+}
+
+#playerScoreDisplay {
+  font-weight: bold;
+  color: rgb(44, 150, 115);
+}
+
+#computerScoreDisplay {
+  font-weight: bold;
+  color: rgb(37, 37, 179);
+}
+
 .greenText {
   color: green;
 }
 
 .redText {
   color: red;
+}
+
+.scoreDisplay {
+  font-size: 20px;
 }
